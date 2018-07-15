@@ -1,3 +1,94 @@
-h1 {
+body{
+	background: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Rub_al_Khali_002.JPG');
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+}
+
+#title-trivia {
     color: blue;
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-family: fantasy;
+}
+
+h1{
+    font-size: 75px;
+}
+
+#btn-primary{
+    text-align: center;
+}
+
+#timer{
+    text-align: center;
+    font: bold;
+}
+
+#current-question{
+    text-align: center;
+}
+
+#question-asked{
+    text-align: center;
+}
+
+#answers-list{
+    text-align: center;
+}
+
+.btn-primary,.reset{
+	background-color: #316177;
+	color: white;
+	font-size: 25px;
+	padding: 5px;
+    margin-top: 10px;
+    cursor: -webkit-grab; cursor: grab;
+}
+
+.btn-primary:hover, .reset:hover{
+    background-color: #1a1f79;
+    cursor: -webkit-grab; cursor: grab;
+}
+
+h2, #message, #finalMessage{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.thisChoice:hover{
+	background-color: #316177;
+	color: white;
+    padding: 5px;
+    cursor: -webkit-grab; cursor: grab;
+}
+
+#message-sent{
+    text-align: center;
+}
+
+#corrected-answer{
+    text-align: center;
+}
+
+#gifs{
+    text-align: center;
+}
+
+#final-message{
+    text-align: center;
+}
+
+#correct-answers{
+    text-align: center;
+}
+
+#wrong-answers{
+    text-align: center;
+}
+
+#no-answer{
+    text-align: center;
+}
+
+#start-over-btn{
+    text-align: center;
 }

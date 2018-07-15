@@ -1,16 +1,112 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Trivia Game</h1>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-12' id='main-container'>
+                
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-md-12' id='title-trivia'>
+                            <h1>Trivia</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-md-12' id='btn-primary'>
+                            <button class='btn btn-primary' id='startBtn'>Start</button>
+                        </div>
+                    </div>
+                </div>
+        <!-- Question page -->
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-md-12' id='timer'>
+                            <div id=timeLeft></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='current-question'>
+                            <div id=currentQuestion></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='question-asked'>
+                            <div class='question'></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='answers-list'>
+                            <div class='answers'></div>
+                        </div>
+                    </div>
+                </div>
+           
+        <!-- Answer Page -->
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-md-12' id='message-sent'>
+                            <div id=message></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='corrected-answer'>
+                            <div id=correctedAnswer></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='gifs'>
+                                <div id=gif></div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Scoreboard -->
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-md-12' id='final-message'>
+                             <div id=finalMessage></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='correct-answers'>
+                            <div id=correctAnswers></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='wrong-answers'>
+                            <div id=wrongAnswers></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='no-answer'>
+                            <div id=noAnswer></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12' id='start-over-btn'>
+                            <div id='startOverBtn'></div>
+                        </div>
+                    </div>
+                </div>        
+            
+            </div>            
+        </div>        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/javascript/app.js"></script>    
 </body>
