@@ -50,10 +50,10 @@ var currentQuestion; var correctAnswer; var wrongAnswer; var noAnswer; var secon
 
 //create messages for when user inputs an answer/time is up and when they answer all of the questions
 var messages = {
-	correct: "Yes!",
-	incorrect: "Not even close! Cue the snarky Alex Trebek quip.",
+	correct: "You're on a roll!",
+	incorrect: "Not even close!",
 	endTime: "You're outta time!",
-	finished: "Alright! Let's add them up and see how you did."
+	finished: "Let's see how you did."
 }
 
 //onclick for the startbutton to begin game
@@ -139,7 +139,8 @@ function answerPage(){
     
     
     
-    //Checks to see if user choice is correct, incorrect, or not answered
+	//Checks to see if user choice is correct, incorrect, or not answered and sicplayes the answer - if wrong - and
+	//the gif for correct answer/gif for incorrect/gif for not answered within 15 seconds 
 	if((userSelect == rightAnswerIndex) && (answered == true)){
 		correctAnswer++;
         $('#message').html(messages.correct);
@@ -157,30 +158,37 @@ function answerPage(){
         $('#gif').html('<img src = "assets/images/'+ gifNoanswer +'.gif" width = "400px">');
 	}
 	
+	//sets a timeout so that that the gif can run and if the number in the questions array is -1 cues the scoreboard
+	//otherwise it moves onto the next question in the array by 1 
 	if(currentQuestion == (triviaQuestions.length-1)){
 		setTimeout(scoreboard, 7000)
-	} else{
-		currentQuestion++;
+	} 
+	else{
+		currentQuestion+=1;
 		setTimeout(newQuestion, 7000);
 	}	
 }
 
+//runs after all the questions are finished
 function scoreboard(){
+	//clears the DOM
 	$('#timeLeft').empty();
 	$('#message').empty();
 	$('#correctedAnswer').empty();
 	$('#gif').empty();
-
+	//attaches the correct message to the DOM and runs the appropriate answer
 	$('#finalMessage').html(messages.finished);
 	$('#correctAnswers').html("Correct Answers: " + correctAnswer);
 	$('#wrongAnswers').html("Incorrect Answers: " + wrongAnswer);
     $('#noAnswer').html("Did not answer: " + noAnswer);
-        if(correctAnswer > 4){
+        if(correctAnswer >= 4){
             $('#gif').html('<img src = "assets/images/'+ gifOver +'.gif" width = "400px">')
         }
         else{
             $('#gif').html('<img src = "assets/images/'+ gifUnder +'.gif" width = "400px">')
         };
+	
+	//resets the game by clicking on the start over button
 	$('#startOverBtn').addClass('reset');
 	$('#startOverBtn').show();
 	$('#startOverBtn').html('Start Over?');

@@ -8,32 +8,19 @@ body{
     color: blue;
     text-align: center;
     margin: 10px 0 0 0;
-    font-family: fantasy;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
 }
 
 h1{
     font-size: 75px;
 }
 
-#btn-primary{
+#btn-primary, #timer, #current-question, #question-asked, #answers-list{
     text-align: center;
 }
 
 #timer{
-    text-align: center;
     font: bold;
-}
-
-#current-question{
-    text-align: center;
-}
-
-#question-asked{
-    text-align: center;
-}
-
-#answers-list{
-    text-align: center;
 }
 
 .btn-primary,.reset{
@@ -51,7 +38,7 @@ h1{
 }
 
 h2, #message, #finalMessage{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .thisChoice:hover{
@@ -61,34 +48,6 @@ h2, #message, #finalMessage{
     cursor: -webkit-grab; cursor: grab;
 }
 
-#message-sent{
-    text-align: center;
-}
-
-#corrected-answer{
-    text-align: center;
-}
-
-#gifs{
-    text-align: center;
-}
-
-#final-message{
-    text-align: center;
-}
-
-#correct-answers{
-    text-align: center;
-}
-
-#wrong-answers{
-    text-align: center;
-}
-
-#no-answer{
-    text-align: center;
-}
-
-#start-over-btn{
+#message-sent, #corrected-answer, #gifs, #final-message, #correct-answers, #wrong-answers, #no-answer, #start-over-btn{
     text-align: center;
 }
