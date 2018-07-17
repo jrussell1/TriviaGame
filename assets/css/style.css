@@ -1,3 +1,5 @@
+
+
 body{
 	background: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Rub_al_Khali_002.JPG');
 	font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +22,8 @@ h1{
 }
 
 #timer{
-    font: bold;
+    font-family: loopy;
+
 }
 
 .btn-primary,.reset{
@@ -39,6 +42,11 @@ h1{
 
 h2, #message, #finalMessage{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#message{
+    font-size: 30px;
+    font: bold;
 }
 
 .thisChoice:hover{
