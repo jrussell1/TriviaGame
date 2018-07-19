@@ -1,6 +1,6 @@
 # TriviaGame
 
-This is a multiple choice trivia game - with one true false question. It was developed to pratice timers. I also used it as an opportunity to utilize the Giffy API (https://giphy.com/) and font insertion through CSS.
+This is a multiple choice trivia game - with one true false question. It was developed to pratice timers. I also used it as an opportunity to utilize the Giffy API (https://giphy.com/) and font insertion through CSS. The HTML used Twitter Bootstrap (https://getbootstrap.com/).
 
 If the player selects the correct answer within 15 seconds an appropriate GIF appears.
 If the player selects an incorrect answer the wrong answer GIF appears.
