@@ -1,3 +1,6 @@
+//global variables
+var currentQuestion; var correctAnswer; var wrongAnswer; var noAnswer; var seconds; var time; var answered; var userSelect;
+
 //Create variable for the questions in an array
 var triviaQuestions = [
     {
@@ -44,9 +47,6 @@ var gifWrong = gifEnd[0];
 var gifNoanswer = gifEnd[1];
 var gifOver = gifEnd[2];
 var gifUnder = gifEnd[3];
-
-//global variables
-var currentQuestion; var correctAnswer; var wrongAnswer; var noAnswer; var seconds; var time; var answered; var userSelect;
 
 //create messages for when user inputs an answer/time is up and when they answer all of the questions
 var messages = {
